@@ -7,6 +7,6 @@ Available addons
 ----------------
 addon | version | summary
 --- | --- | ---
-[](/) | 14.0.1.0.0 | 
+[disable_mail_follower_invitation](disable_mail_follower_invitation) | 14.0.1.0.0 | Disable mail in invitation of followers
 
 [//]: # (end addons)
