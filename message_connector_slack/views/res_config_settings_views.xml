@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2023 Ángel García de la Chica Herrera <angel.garcia@sygel.es>
+ License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record id="message_connector_slack_res_config_settings_view_form" model="ir.ui.view">
+        <field name="name">message.connector.slack.res.config.settings.view.form</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="message_connector_base.message_connector_base_res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//div[@id='message_connector_base_general_settings']" position='after'>
+                <div attrs="{'invisible': [('message_connector_active', '=', False)]}">
+                    <h2>Slack Connection Settings</h2>
+                    <div class="row mt16 o_settings_container">
+                        <div class="col-12 col-lg-6 o_setting_box">
+                            <div class="o_setting_left_pane">
+                                <field name="slack_active" widget="boolean_toggle"/>
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="slack_active"/>
+                                <div class="text-muted">
+                                    Enable/Disable Slack Messages Connector.<br/>
+                                    If you disable it, all Slack messages will go to draft status. And you will not be able to send any messages to the Slack chat.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6 o_setting_box">
+                            <div class="o_setting_right_pane">
+                                <span class="o_form_label">Frequency of Deletion of Slack Messages from the Log (days)</span>
+                                <div class="text-muted">
+                                    If it is zero, the frequency will be the general one
+                                    <field name="slack_log_msg_deletion_freq" class="text-left oe_inline"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-12 o_setting_box" attrs="{'invisible': [('slack_active', '=', False)]}">
+                            <div class="o_setting_left_pane">
+                                <field name="slack_active_production" widget="boolean_toggle"/>
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="slack_active_production"/>
+                                <div class="text-muted">
+                                    Test / Production Slack Messages.<br/>
+                                    If active, messages will be sent to the production Slack environment.<br/>
+                                    If disabled, messages will be sent to the test Slack environment.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt16 o_settings_container" attrs="{'invisible': ['|', ('slack_active_production', '=', False), ('slack_active', '=', False)]}">
+                        <div class="col-12 col-lg-6 o_setting_box">
+                            <div class="o_setting_right_pane">
+                                <span class="o_form_label">Slack Token Production</span>
+                                <br/>
+                                <div class="text-muted">
+                                    <field name="slack_token_production" class="text-left oe_inline" attrs="{'required': [('slack_active_production', '=', True), ('slack_active', '=', True)]}"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6 o_setting_box">
+                            <div class="o_setting_right_pane">
+                                <span class="o_form_label">Test Channel Production</span>
+                                <div class="text-muted">
+                                    <field name="slack_log_channel_production" class="text-left oe_inline" attrs="{'required': [('slack_active_production', '=', True), ('slack_active', '=', True)]}" options="{'no_quick_create': True, 'no_create_edit' : True, 'no_open': True}"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6 o_setting_box">
+                            <div class="o_setting_right_pane">
+                                <button
+                                    name="action_slack_test_message"
+                                    type="object"
+                                    string="Send a test message"
+                                    class="btn-primary"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt16 o_settings_container" attrs="{'invisible': ['|', ('slack_active_production', '!=', False), ('slack_active', '=', False)]}">
+                        <div class="col-12 col-lg-6 o_setting_box">
+                            <div class="o_setting_right_pane">
+                                <span class="o_form_label">Slack Token Test</span>
+                                <br/>
+                                <div class="text-muted">
+                                    <field name="slack_token_test" class="text-left oe_inline" attrs="{'required': [('slack_active_production', '=', False), ('slack_active', '=', True)]}"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6 o_setting_box">
+                            <div class="o_setting_right_pane">
+                                <span class="o_form_label">Test Channel Test</span>
+                                <div class="text-muted">
+                                    <field name="slack_log_channel_test" class="text-left oe_inline" attrs="{'required': [('slack_active_production', '=', False), ('slack_active', '=', True)]}" options="{'no_quick_create': True, 'no_create_edit' : True, 'no_open': True}"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6 o_setting_box">
+                            <div class="o_setting_right_pane">
+                                <button
+                                    name="action_slack_test_message"
+                                    type="object"
+                                    string="Send a test message"
+                                    class="btn-primary"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </xpath>
+        </field>
+    </record>
+</odoo>

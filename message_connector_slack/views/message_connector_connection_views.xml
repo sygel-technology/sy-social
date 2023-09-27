@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2023 Ángel García de la Chica Herrera <angel.garcia@sygel.es>
+ License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record id="message_connector_slack_connection_form" model="ir.ui.view">
+        <field name="name">message.connector.slack.connection.form</field>
+        <field name="model">message.connector.connection</field>
+        <field name="inherit_id" ref="message_connector_base.message_connector_base_connection_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//page[@id='queue_jobs']" position='before'>
+                <page string="Slack Fields" attrs="{'invisible': [('messaging_service', '!=', 'slack')]}">
+                    <group >
+                        <field name="msg"/>
+                        <field name="attachments"/>
+                    </group>
+                </page>
+            </xpath>
+        </field>
+    </record>
+</odoo>

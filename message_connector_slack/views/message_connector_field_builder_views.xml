@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2023 Ángel García de la Chica Herrera <angel.garcia@sygel.es>
+ License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record id="message_connector_slack_field_builder_form" model="ir.ui.view">
+        <field name="name">message.connector.slack.field.builder.form</field>
+        <field name="model">message.connector.field.builder</field>
+        <field name="inherit_id" ref="message_connector_base.message_connector_base_field_builder_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='default_value']" position='after'>
+                <field name="short"/>
+                <field name="separator_field_table" attrs="{'invisible': [('select_several_fields', '=', False)]}"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

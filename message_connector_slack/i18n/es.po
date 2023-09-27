@@ -1,0 +1,529 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* message_connector_slack
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-05 18:42+0000\n"
+"PO-Revision-Date: 2023-09-05 18:42+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: message_connector_slack
+#: model_terms:ir.ui.view,arch_db:message_connector_slack.message_connector_slack_message_builder_form
+msgid ""
+"<code>Add Record Name in the Header</code>: To add the record name to the "
+"Message Header."
+msgstr ""
+"<code>Añadir el Nombre del registro en la cabecera</code>: To add the record name to the "
+"Message Header."
+
+#. module: message_connector_slack
+#: model_terms:ir.ui.view,arch_db:message_connector_slack.message_connector_slack_message_builder_form
+msgid ""
+"<code>Add Record Name in the Subtitle</code>: to add a record name to the "
+"subtitle."
+msgstr ""
+
+#. module: message_connector_slack
+#: model_terms:ir.ui.view,arch_db:message_connector_slack.message_connector_slack_message_builder_form
+msgid ""
+"<code>Add Record Name in the Title</code>: to add a record name to the "
+"Title."
+msgstr ""
+
+#. module: message_connector_slack
+#: model_terms:ir.ui.view,arch_db:message_connector_slack.message_connector_slack_message_builder_form
+msgid "<code>Color</code>: To change de line color of the attachment."
+msgstr ""
+
+#. module: message_connector_slack
+#: model_terms:ir.ui.view,arch_db:message_connector_slack.message_connector_slack_message_builder_form
+msgid ""
+"<code>Field Button Name</code>: Select a field to be displayed on the button"
+msgstr ""
+
+#. module: message_connector_slack
+#: model_terms:ir.ui.view,arch_db:message_connector_slack.message_connector_slack_message_builder_form
+msgid ""
+"<code>File Introduction Message</code>: To add a message to introduce the "
+"PDF File"
+msgstr ""
+
+#. module: message_connector_slack
+#: model_terms:ir.ui.view,arch_db:message_connector_slack.message_connector_slack_message_builder_form
+msgid "<code>Header in Bold</code>: to format the header in boldface type."
+msgstr ""
+
+#. module: message_connector_slack
+#: model_terms:ir.ui.view,arch_db:message_connector_slack.message_connector_slack_message_builder_form
+msgid ""
+"<code>Message Header</code>: Optional field to add a text in the header."
+msgstr ""
+
+#. module: message_connector_slack
+#: model_terms:ir.ui.view,arch_db:message_connector_slack.message_connector_slack_message_builder_form
+msgid "<code>Name</code>: Display name of the field."
+msgstr ""
+
+#. module: message_connector_slack
+#: model_terms:ir.ui.view,arch_db:message_connector_slack.message_connector_slack_message_builder_form
+msgid "<code>Prefix button name</code>: Add a text prefix."
+msgstr ""
+
+#. module: message_connector_slack
+#: model_terms:ir.ui.view,arch_db:message_connector_slack.message_connector_slack_message_builder_form
+msgid "<code>Subtitle</code>: To add a subtitle in the attachment."
+msgstr ""
+
+#. module: message_connector_slack
+#: model_terms:ir.ui.view,arch_db:message_connector_slack.message_connector_slack_message_builder_form
+msgid "<code>Suffix Button Name</code>: Add a text Suffix."
+msgstr ""
+
+#. module: message_connector_slack
+#: model_terms:ir.ui.view,arch_db:message_connector_slack.message_connector_slack_message_builder_form
+msgid "<code>Title</code>: To add a title in the attachment."
+msgstr ""
+
+#. module: message_connector_slack
+#: model_terms:ir.ui.view,arch_db:message_connector_slack.message_connector_slack_res_config_settings_view_form
+msgid ""
+"<span class=\"o_form_label\">Frequency of Deletion of Slack Messages from "
+"the Log (days)</span>"
+msgstr ""
+"<span class=\"o_form_label\">Frecuencia de eliminación de registro de mensajes de Slack"
+"(días)</span>"
+
+#. module: message_connector_slack
+#: model_terms:ir.ui.view,arch_db:message_connector_slack.message_connector_slack_res_config_settings_view_form
+msgid ""
+"<span class=\"o_form_label\">Slack Token Production</span>\n"
+"                                <br/>"
+msgstr ""
+"<span class=\"o_form_label\">Slack Token Producción</span>\n"
+"                                <br/>"
+
+#. module: message_connector_slack
+#: model_terms:ir.ui.view,arch_db:message_connector_slack.message_connector_slack_res_config_settings_view_form
+msgid ""
+"<span class=\"o_form_label\">Slack Token Test</span>\n"
+"                                <br/>"
+msgstr ""
+
+#. module: message_connector_slack
+#: model_terms:ir.ui.view,arch_db:message_connector_slack.message_connector_slack_res_config_settings_view_form
+msgid "<span class=\"o_form_label\">Test Channel Production</span>"
+msgstr "<span class=\"o_form_label\">Canal de Pruebas de Slack Producción</span>"
+
+#. module: message_connector_slack
+#: model_terms:ir.ui.view,arch_db:message_connector_slack.message_connector_slack_res_config_settings_view_form
+msgid "<span class=\"o_form_label\">Test Channel Test</span>"
+msgstr "<span class=\"o_form_label\">Canal de pruebas de Slack Test</span>"
+
+#. module: message_connector_slack
+#: model_terms:ir.ui.view,arch_db:message_connector_slack.message_connector_slack_message_builder_form
+msgid "<strong>Section 1:</strong>"
+msgstr ""
+
+#. module: message_connector_slack
+#: model_terms:ir.ui.view,arch_db:message_connector_slack.message_connector_slack_message_builder_form
+msgid "<strong>Section 2:</strong>"
+msgstr ""
+
+#. module: message_connector_slack
+#: model_terms:ir.ui.view,arch_db:message_connector_slack.message_connector_slack_message_builder_form
+msgid "<strong>Section 3:</strong>"
+msgstr ""
+
+#. module: message_connector_slack
+#: model_terms:ir.ui.view,arch_db:message_connector_slack.message_connector_slack_message_builder_form
+msgid "<strong>Section 4:</strong> Add all fields you want in the attachment"
+msgstr ""
+
+#. module: message_connector_slack
+#: model_terms:ir.ui.view,arch_db:message_connector_slack.message_connector_slack_message_builder_form
+msgid ""
+"<strong>Section 5: </strong>Add a button with a shortcut to your record"
+msgstr ""
+
+#. module: message_connector_slack
+#: model_terms:ir.ui.view,arch_db:message_connector_slack.message_connector_slack_message_builder_form
+msgid "<strong>Section 6:</strong>"
+msgstr ""
+
+#. module: message_connector_slack
+#: model:ir.model.fields,field_description:message_connector_slack.field_res_company__slack_active
+#: model:ir.model.fields,field_description:message_connector_slack.field_res_config_settings__slack_active
+msgid "Active Slack"
+msgstr "Activar Slack"
+
+#. module: message_connector_slack
+#: model:ir.model.fields,field_description:message_connector_slack.field_message_connector_message_builder__add_record_name_header
+msgid "Add Record Name in the Header"
+msgstr "Añadir el nombre del registro en la cabecera"
+
+#. module: message_connector_slack
+#: model:ir.model.fields,field_description:message_connector_slack.field_message_connector_message_builder__add_record_name_subtitle
+msgid "Add Record Name in the Subtitle"
+msgstr "Añadir el nombre del registro en el subtítulo"
+
+#. module: message_connector_slack
+#: model:ir.model.fields,field_description:message_connector_slack.field_message_connector_message_builder__add_record_name_title
+msgid "Add Record Name in the Title"
+msgstr "Añadir el nombre del registro en el título"
+
+#. module: message_connector_slack
+#: model:ir.model.fields,help:message_connector_slack.field_message_connector_message_builder__add_button_action
+msgid "Add a button to navigate directly to the record_id from the chat"
+msgstr "Añadir un botón para navegar directamente al registro desde el chat"
+
+#. module: message_connector_slack
+#: model:ir.model.fields,field_description:message_connector_slack.field_message_connector_message_builder__add_button_action
+msgid "Add action button"
+msgstr "Añadir botón de acción"
+
+#. module: message_connector_slack
+#: model:ir.model.fields,field_description:message_connector_slack.field_message_connector_message_builder__attachment
+msgid "Attachment"
+msgstr "Adjunto"
+
+#. module: message_connector_slack
+#: model:ir.model.fields,field_description:message_connector_slack.field_message_connector_connection__attachments
+msgid "Attachments"
+msgstr "Adjuntos"
+
+#. module: message_connector_slack
+#: model:ir.model.fields,field_description:message_connector_slack.field_message_connector_channel__changeset_change_ids
+#: model:ir.model.fields,field_description:message_connector_slack.field_message_connector_connection__changeset_change_ids
+#: model:ir.model.fields,field_description:message_connector_slack.field_message_connector_field_builder__changeset_change_ids
+#: model:ir.model.fields,field_description:message_connector_slack.field_message_connector_message_builder__changeset_change_ids
+#: model:ir.model.fields,field_description:message_connector_slack.field_res_company__changeset_change_ids
+#: model:ir.model.fields,field_description:message_connector_slack.field_res_config_settings__changeset_change_ids
+msgid "Changeset Changes"
+msgstr "Cambios de conjunto de cambios"
+
+#. module: message_connector_slack
+#: model:ir.model.fields,field_description:message_connector_slack.field_message_connector_channel__changeset_ids
+#: model:ir.model.fields,field_description:message_connector_slack.field_message_connector_connection__changeset_ids
+#: model:ir.model.fields,field_description:message_connector_slack.field_message_connector_field_builder__changeset_ids
+#: model:ir.model.fields,field_description:message_connector_slack.field_message_connector_message_builder__changeset_ids
+#: model:ir.model.fields,field_description:message_connector_slack.field_res_company__changeset_ids
+#: model:ir.model.fields,field_description:message_connector_slack.field_res_config_settings__changeset_ids
+msgid "Changesets"
+msgstr "Conjunto de cambios"
+
+#. module: message_connector_slack
+#: model:ir.model.fields,field_description:message_connector_slack.field_message_connector_message_builder__color
+msgid "Color"
+msgstr ""
+
+#. module: message_connector_slack
+#: model:ir.model,name:message_connector_slack.model_res_company
+msgid "Companies"
+msgstr "Compañías"
+
+#. module: message_connector_slack
+#: model:ir.model,name:message_connector_slack.model_res_config_settings
+msgid "Config Settings"
+msgstr "Opciones de configuración"
+
+#. module: message_connector_slack
+#: model:ir.model.fields,field_description:message_connector_slack.field_message_connector_channel__count_pending_changeset_changes
+#: model:ir.model.fields,field_description:message_connector_slack.field_message_connector_connection__count_pending_changeset_changes
+#: model:ir.model.fields,field_description:message_connector_slack.field_message_connector_field_builder__count_pending_changeset_changes
+#: model:ir.model.fields,field_description:message_connector_slack.field_message_connector_message_builder__count_pending_changeset_changes
+#: model:ir.model.fields,field_description:message_connector_slack.field_res_company__count_pending_changeset_changes
+#: model:ir.model.fields,field_description:message_connector_slack.field_res_config_settings__count_pending_changeset_changes
+msgid "Count Pending Changeset Changes"
+msgstr "Contar cambios de conjunto de cambios pendientes"
+
+#. module: message_connector_slack
+#: model:ir.model.fields,field_description:message_connector_slack.field_message_connector_channel__count_pending_changesets
+#: model:ir.model.fields,field_description:message_connector_slack.field_message_connector_connection__count_pending_changesets
+#: model:ir.model.fields,field_description:message_connector_slack.field_message_connector_field_builder__count_pending_changesets
+#: model:ir.model.fields,field_description:message_connector_slack.field_message_connector_message_builder__count_pending_changesets
+#: model:ir.model.fields,field_description:message_connector_slack.field_res_company__count_pending_changesets
+#: model:ir.model.fields,field_description:message_connector_slack.field_res_config_settings__count_pending_changesets
+msgid "Count Pending Changesets"
+msgstr "Contar conjuntos de cambios pendientes"
+
+#. module: message_connector_slack
+#: model_terms:ir.ui.view,arch_db:message_connector_slack.message_connector_slack_res_config_settings_view_form
+msgid ""
+"Enable/Disable Slack Messages Connector.<br/>\n"
+"                                    If you disable it, all Slack messages will go to draft status. And you will not be able to send any messages to the Slack chat."
+msgstr ""
+"Activar/desactivar el conector de mensajes de Slack.<br/>\n"
+"                                    Si se desactiva, todos los mensajes de Slack pasarán a estado borrador y no se podrá enviar ningún mensaje al chat de Slack."
+
+#. module: message_connector_slack
+#: model:ir.model.fields,field_description:message_connector_slack.field_message_connector_message_builder__field_button_id
+msgid "Field Button Name"
+msgstr "Campo a mostrar en el nombre del botón"
+
+#. module: message_connector_slack
+#: code:addons/message_connector_slack/models/message_connector_message_builder.py:0
+#, python-format
+msgid ""
+"For the button to be displayed in the message the button name must contain "
+"some field."
+msgstr ""
+"Para que se muestre el botón en el mensaje, el nombre del botón debe contener "
+"algún campo."
+
+#. module: message_connector_slack
+#: model:ir.model.fields,field_description:message_connector_slack.field_res_company__slack_log_msg_deletion_freq
+#: model:ir.model.fields,field_description:message_connector_slack.field_res_config_settings__slack_log_msg_deletion_freq
+msgid "Frequency of Deletion of Slack Messages from the Log (days)"
+msgstr "Frecuencia de eliminación de registro de mensajes de Slack (días)"
+
+#. module: message_connector_slack
+#: model:ir.model.fields,field_description:message_connector_slack.field_message_connector_message_builder__bold_header
+msgid "Header in Bold"
+msgstr "Cabecera en negrita"
+
+#. module: message_connector_slack
+#: model_terms:ir.ui.view,arch_db:message_connector_slack.message_connector_slack_res_config_settings_view_form
+msgid "If it is zero, the frequency will be the general one"
+msgstr "Si es cero, la frecuencia será la general"
+
+#. module: message_connector_slack
+#: model:ir.model.fields,help:message_connector_slack.field_res_config_settings__slack_log_msg_deletion_freq
+msgid ""
+"If set to zero, messages will be deleted at the general frequency. Any other"
+" value greater than zero will cause slack messages to be deleted at this "
+"frequency."
+msgstr ""
+"Si se ajusta a cero, los mensajes se borrarán con la frecuencia general. Cualquier otro"
+" valor mayor que cero hará que los mensajes de Slack se borren a esta "
+"frecuencia."
+
+#. module: message_connector_slack
+#: model:ir.model.fields,help:message_connector_slack.field_message_connector_message_builder__add_record_name_header
+msgid ""
+"Insert the name of the record in the header. Format: message_header + "
+"record_name"
+msgstr ""
+"Insertar el nombre del registro en la cabecera. Formato: message_header + "
+"record_name"
+
+#. module: message_connector_slack
+#: model:ir.model.fields,help:message_connector_slack.field_message_connector_message_builder__add_record_name_subtitle
+msgid ""
+"Insert the name of the record in the subtitle. Format: subtitle + "
+"record_name"
+msgstr ""
+"Introduzca el nombre del registro en el subtítulo. . Formato: subtitle + "
+"record_name"
+
+#. module: message_connector_slack
+#: model:ir.model.fields,help:message_connector_slack.field_message_connector_message_builder__add_record_name_title
+msgid ""
+"Insert the name of the record in the title. Format: title + record_name"
+msgstr ""
+" Inserte el nombre del registro en el título. Formato: title + record_name"
+
+#. module: message_connector_slack
+#: model:ir.model.fields,field_description:message_connector_slack.field_message_connector_connection__msg
+msgid "Message"
+msgstr "Mensaje"
+
+#. module: message_connector_slack
+#: model:ir.model,name:message_connector_slack.model_message_connector_channel
+msgid "Message Connector Channel"
+msgstr "Canal del conector de mensajes"
+
+#. module: message_connector_slack
+#: model:ir.model,name:message_connector_slack.model_message_connector_connection
+msgid "Message Connector Connection"
+msgstr "Conexión del conector de mensajes"
+
+#. module: message_connector_slack
+#: model:ir.model,name:message_connector_slack.model_message_connector_field_builder
+msgid "Message Connector Field Builder"
+msgstr "Constructor de campos del conector de mensajes"
+
+#. module: message_connector_slack
+#: model:ir.model.fields,field_description:message_connector_slack.field_message_connector_message_builder__message_header
+msgid "Message Header"
+msgstr "Cabecera del mensaje"
+
+#. module: message_connector_slack
+#: model:ir.model,name:message_connector_slack.model_message_connector_message_builder
+msgid "Message Template Builder"
+msgstr "Constructor de la plantilla del mensaje"
+
+#. module: message_connector_slack
+#: model:ir.model.fields,field_description:message_connector_slack.field_message_connector_message_builder__prefix_button_name
+msgid "Prefix button name"
+msgstr "Prefijo del nombre del botón"
+
+#. module: message_connector_slack
+#: model_terms:ir.ui.view,arch_db:message_connector_slack.message_connector_slack_res_config_settings_view_form
+msgid "Send a test message"
+msgstr "Enviar mensaje de prueba"
+
+#. module: message_connector_slack
+#: model:ir.model.fields,field_description:message_connector_slack.field_message_connector_field_builder__short
+msgid "Short"
+msgstr ""
+
+#. module: message_connector_slack
+#: model_terms:ir.ui.view,arch_db:message_connector_slack.message_connector_slack_channel_filter
+#: model_terms:ir.ui.view,arch_db:message_connector_slack.message_connector_slack_message_builder_filter
+msgid "Slack"
+msgstr ""
+
+#. module: message_connector_slack
+#: model:ir.model.fields,field_description:message_connector_slack.field_message_connector_connection__api_token
+msgid "Slack API token"
+msgstr ""
+
+#. module: message_connector_slack
+#: model:ir.model.fields,field_description:message_connector_slack.field_message_connector_channel__slack_name
+msgid "Slack Channel Name"
+msgstr "Nombre del canal de Slack"
+
+#. module: message_connector_slack
+#: model_terms:ir.ui.view,arch_db:message_connector_slack.message_connector_slack_res_config_settings_view_form
+msgid "Slack Connection Settings"
+msgstr "Ajustes conexión Slack"
+
+#. module: message_connector_slack
+#: model_terms:ir.ui.view,arch_db:message_connector_slack.message_connector_slack_connection_form
+msgid "Slack Fields"
+msgstr "Campos Slack"
+
+#. module: message_connector_slack
+#: model_terms:ir.ui.view,arch_db:message_connector_slack.message_connector_slack_message_builder_form
+msgid "Slack Help"
+msgstr "Ayuda Slack"
+
+#. module: message_connector_slack
+#: model_terms:ir.ui.view,arch_db:message_connector_slack.message_connector_slack_message_builder_form
+msgid "Slack Message Attachments"
+msgstr "Adjuntos del mensaje de Slack"
+
+#. module: message_connector_slack
+#: model_terms:ir.ui.view,arch_db:message_connector_slack.message_connector_slack_message_builder_form
+msgid "Slack Message Header"
+msgstr "Cabecera del mensaje de Slack"
+
+#. module: message_connector_slack
+#: model:ir.model.fields,field_description:message_connector_slack.field_res_config_settings__slack_log_channel_production
+msgid "Slack Test Channel Production"
+msgstr "Canal de pruena de Slack Producción"
+
+#. module: message_connector_slack
+#: model:ir.model.fields,field_description:message_connector_slack.field_res_company__slack_token_production
+#: model:ir.model.fields,field_description:message_connector_slack.field_res_config_settings__slack_token_production
+msgid "Slack Token Production"
+msgstr "Token de Slack Producción"
+
+#. module: message_connector_slack
+#: model:ir.model.fields,field_description:message_connector_slack.field_res_company__slack_token_test
+#: model:ir.model.fields,field_description:message_connector_slack.field_res_config_settings__slack_token_test
+msgid "Slack Token Test"
+msgstr "Token de Slack Test"
+
+#. module: message_connector_slack
+#: model:ir.model.fields,help:message_connector_slack.field_message_connector_field_builder__short
+msgid ""
+"Slack field to position the fields in two columns (Short = True) or in one "
+"(Short = False)."
+msgstr ""
+"Slack field to display the fields in two columns (short = True) or in one "
+"(Short = False)."
+
+
+#. module: message_connector_slack
+#: model:ir.model.fields,field_description:message_connector_slack.field_message_connector_message_builder__text
+msgid "Subtitle"
+msgstr "Subtítulo"
+
+#. module: message_connector_slack
+#: model:ir.model.fields,field_description:message_connector_slack.field_message_connector_message_builder__suffix_button_name
+msgid "Suffix Button Name"
+msgstr "Sufijo del nombre del botón"
+
+#. module: message_connector_slack
+#: model:ir.model.fields,field_description:message_connector_slack.field_res_company__slack_active_production
+#: model:ir.model.fields,field_description:message_connector_slack.field_res_config_settings__slack_active_production
+msgid "Test / Production Environment"
+msgstr "Entorno de Test / Producción"
+
+#. module: message_connector_slack
+#: model_terms:ir.ui.view,arch_db:message_connector_slack.message_connector_slack_res_config_settings_view_form
+msgid ""
+"Test / Production Slack Messages.<br/>\n"
+"                                    If active, messages will be sent to the production Slack environment.<br/>\n"
+"                                    If disabled, messages will be sent to the test Slack environment."
+msgstr ""
+"Test / Producción Mensajes Slack.<br/>\n"
+"                                    Si está activo, los mensajes se enviarán al entorno de Slack de Producción.<br/>\n"
+"                                    Si está desactivado, los mensajes se enviarán al entorno Slack de Test."
+
+#. module: message_connector_slack
+#: model:ir.model.fields,field_description:message_connector_slack.field_res_company__slack_log_channel_production
+msgid "Test Channel Production"
+msgstr "Canal de prueba de Slack Producción"
+
+#. module: message_connector_slack
+#: model:ir.model.fields,field_description:message_connector_slack.field_res_company__slack_log_channel_test
+#: model:ir.model.fields,field_description:message_connector_slack.field_res_config_settings__slack_log_channel_test
+msgid "Test Channel Test"
+msgstr "Canal de prueba de Slack Test"
+
+#. module: message_connector_slack
+#: model:ir.model.fields,field_description:message_connector_slack.field_message_connector_message_builder__text_fallback
+msgid "Text fallback"
+msgstr "Texto de fallback"
+
+#. module: message_connector_slack
+#: model:ir.model.fields,help:message_connector_slack.field_message_connector_message_builder__field_button_id
+#: model:ir.model.fields,help:message_connector_slack.field_message_connector_message_builder__prefix_button_name
+#: model:ir.model.fields,help:message_connector_slack.field_message_connector_message_builder__suffix_button_name
+msgid ""
+"The button name will be prefix + field_id + sufix.The fields prefix, "
+"field_button_id and suffix are all optional."
+msgstr ""
+"El nombre del botón será prefix + field_id + sufix. Los campos prefijo, "
+"field_button_id y sufijo son opcionales."
+
+#. module: message_connector_slack
+#: code:addons/message_connector_slack/models/res_config_settings.py:0
+#, python-format
+msgid ""
+"The frequency of slack message log deletion must be greater than or equal to"
+" zero."
+msgstr ""
+"La frecuencia de borrado del registro de mensajes de holgura debe ser mayor o igual a"
+" cero."
+
+#. module: message_connector_slack
+#: model:ir.model.fields,field_description:message_connector_slack.field_message_connector_message_builder__title
+msgid "Title"
+msgstr "Título"
+
+#. module: message_connector_slack
+#: model:ir.model.fields,field_description:message_connector_slack.field_message_connector_channel__user_can_see_changeset
+#: model:ir.model.fields,field_description:message_connector_slack.field_message_connector_connection__user_can_see_changeset
+#: model:ir.model.fields,field_description:message_connector_slack.field_message_connector_field_builder__user_can_see_changeset
+#: model:ir.model.fields,field_description:message_connector_slack.field_message_connector_message_builder__user_can_see_changeset
+#: model:ir.model.fields,field_description:message_connector_slack.field_res_company__user_can_see_changeset
+#: model:ir.model.fields,field_description:message_connector_slack.field_res_config_settings__user_can_see_changeset
+msgid "User Can See Changeset"
+msgstr "El usuario puede ver los cambios"
+
+#. module: message_connector_slack
+#: model_terms:ir.ui.view,arch_db:message_connector_slack.message_connector_slack_channel_kanban
+#: model_terms:ir.ui.view,arch_db:message_connector_slack.message_connector_slack_field_builder_kanban
+msgid "slack_logo"
+msgstr ""
