@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2023 Ángel García de la Chica Herrera <angel.garcia@sygel.es>
+ License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record id="message_connector_slack_message_builder_form" model="ir.ui.view">
+        <field name="name">message.connector.slack.message.builder.form</field>
+        <field name="model">message.connector.message.builder</field>
+        <field name="inherit_id" ref="message_connector_base.message_connector_base_message_builder_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//group[@id='message_report']" position='after'>
+                <group string="Slack Message Header" attrs="{'invisible': [('messaging_service', '!=', 'slack')]}">
+                    <field name="message_header" />
+                    <field name="add_record_name_header"/>
+                    <field name="bold_header"/>
+                </group>
+                <group string="Slack Message Attachments" attrs="{'invisible': [('messaging_service', '!=', 'slack')]}">
+                    <field name="title"/>
+                    <field name="add_record_name_title"/>
+                    <field name="text"/>
+                    <field name="add_record_name_subtitle"/>
+                    <field name="color" widget="color" class="mb-4 o_im_livechat_field_widget_color"/>
+                    <field name="add_button_action"/>
+                    <field name="prefix_button_name" attrs="{'invisible': [('add_button_action', '=', False)]}"/>
+                    <field name="field_button_id" attrs="{'invisible': [('add_button_action', '=', False)]}" options="{'no_open': True,'no_quick_create': True, 'no_create_edit': True}"/>
+                    <field name="suffix_button_name" attrs="{'invisible': [('add_button_action', '=', False)]}"/>
+                </group>
+            </xpath>
+            <xpath expr="//h3[@id='help']" position='after'>
+                <div class="row">
+                    <div style="text-align: center;">
+                        <img attrs="{'invisible': [('messaging_service', '!=', 'slack')]}" src="/message_connector_slack/static/src/img/slack_help.png" style="height: auto; width: 1100px;" alt="Slack Help"/>
+                        <br/><br/>
+                    </div>
+                    
+                    <div attrs="{'invisible': [('messaging_service', '!=', 'slack')]}" >
+                            <ul>
+                                <li> <strong>Section 1:</strong> Slack Message Header</li>
+                                <ul>
+                                    <li><code>Message Header</code>: Optional field to add a text in the header.</li>
+                                    <li><code>Add Record Name in the Header</code>: To add the record name to the Message Header.</li>
+                                    <li><code>Header in Bold</code>: to format the header in boldface type. </li>
+                                </ul>
+                                <li> <strong>Section 2:</strong> Slack Attachment titles</li>
+                                <ul>
+                                    <li><code>Title</code>: To add a title in the attachment.</li>
+                                    <li><code>Add Record Name in the Title</code>: to add a record name to the Title.</li>
+                                    <li><code>Subtitle</code>: To add a subtitle in the attachment.</li>
+                                    <li><code>Add Record Name in the Subtitle</code>: to add a record name to the subtitle.</li>
+                                </ul>
+                                <li> <strong>Section 3:</strong> Attachment Color</li>
+                                <ul>
+                                    <li><code>Color</code>: To change de line color of the attachment.</li>
+                                </ul>
+                            </ul>
+                    </div>
+                    <div attrs="{'invisible': [('messaging_service', '!=', 'slack')]}">
+                        <ul>
+                            <li> <strong>Section 4:</strong> Add all fields you want in the attachment</li>
+                            <ul>
+                                <li><code>Name</code>: Display name of the field.</li>
+                            </ul><br/><br/>
+                            <li> <strong>Section 5:</strong> Add a button with a shortcut to your record</li>
+                            <ul>
+                                <li><code>Prefix button name</code>: Add a text prefix.</li>
+                                <li><code>Field Button Name</code>: Select a field to be displayed on the button</li>
+                                <li><code>Suffix Button Name</code>: Add a text Suffix.</li>
+                            </ul><br/>
+                            <li> <strong>Section 6:</strong> PDF Report</li>
+                            <ul>
+                                <li><code>File Introduction Message</code>: To add a message to introduce the PDF File</li>
+                                <li><code>Report</code>: Select the PDF report you want to send in the message</li>
+                            </ul>
+                        </ul>
+                    </div>
+                </div>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="message_connector_slack_field_builder_kanban" model="ir.ui.view">
+        <field name="name">message.connector.slack.field.builder.kanban</field>
+        <field name="model">message.connector.message.builder</field>
+        <field name="inherit_id" ref="message_connector_base.message_connector_base_message_builder_kanban"/>
+        <field name="arch" type="xml">
+            <xpath expr="//div[@id='messaging_service_logo']" position='inside'>
+                <t t-if="record.messaging_service.value == 'Slack'">
+                    <img alt="slack_logo" src="/message_connector_slack/static/src/img/Slack-stacked-logo-RGB.png"/>
+                </t>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="message_connector_slack_message_builder_filter" model="ir.ui.view">
+        <field name="name">message.connector.slack.message.builder.filter</field>
+        <field name="model">message.connector.message.builder</field>
+        <field name="inherit_id" ref="message_connector_base.message_connector_base_message_builder_filter"/>
+        <field name="arch" type="xml">
+            <xpath expr="//separator[@name='messaging_service_separator']" position='after'>
+                <filter string="Slack" name="slack_messages" domain="[('messaging_service', '=', 'slack')]"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>
