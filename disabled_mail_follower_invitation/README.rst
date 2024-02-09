@@ -55,6 +55,7 @@ Contributors
 
 * Joan Segui <joan.segui@qubiq.es>
 * Valentin Vinagre <valentin.vinagre@sygel.es>
+* Alberto Martínez <alberto.martinez@sygel.es>
 
 
 Maintainer
