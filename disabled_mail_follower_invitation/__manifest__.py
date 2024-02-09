@@ -4,7 +4,7 @@
 {
     "name": "Disabled Mail Follower Invitation",
     "summary": "Disable mail in invitation of followers",
-    "version": "16.0.1.0.0",
+    "version": "17.0.1.0.0",
     "author": "QubiQ, Odoo Community Association (OCA)",
     "website": "https://www.qubiq.es",
     "category": "mail",
