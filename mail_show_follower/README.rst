@@ -27,7 +27,7 @@ Configuration
 To configure this module, you need to:
 
 #. Go General settings/Discuss/Show Internal Users CC and set if want to show or not internal users in cc details.
-#. Go Settings/Users & Company salect any user in 'Preferences' check or not the 'Show in CC' field if this user need to appear in the cc note.
+#. Go Settings/Users & Company/Users and select any user in 'Preferences' check or not the 'Show in CC' field if this user need to appear in the cc note.
 
 
 Usage
@@ -38,20 +38,13 @@ To use this module, you need to:
 #. Send an email from any document of odoo.
 
 
-ROADMAP
-=======
-
-
-* ...
-
-
 Bug Tracker
 ===========
 
-Bugs and errors are managed in `issues of GitHub <https://github.com/sygel-technology/sy-server-backend/issues>`_.
+Bugs and errors are managed in `issues of GitHub <https://github.com/sygel-technology/sy-social/issues>`_.
 In case of problems, please check if your problem has already been
 reported. If you are the first to discover it, help us solving it by indicating
-a detailed description `here <https://github.com/sygel-technology/sy-server-backend/issues/new>`_.
+a detailed description `here <https://github.com/sygel-technology/sy-social/issues/new>`_.
 
 Do not contact contributors directly about support or help with technical issues.
 
@@ -69,6 +62,7 @@ Contributors
 ~~~~~~~~~~~~
 
 * Valentin Vinagre <valentin.vinagre@sygel.es>
+* Ángel García de la Chica Herrera <angel.garcia@sygel.es>
 
 
 Maintainer
@@ -76,7 +70,10 @@ Maintainer
 
 This module is maintained by Sygel.
 
+.. image:: https://www.sygel.es/logo.png
+   :alt: Sygel
+   :target: https://www.sygel.es
 
-This module is part of the `Sygel/sy-server-backend <https://github.com/sygel-technology/sy-server-backend>`_.
+This module is part of the `Sygel/sy-social <https://github.com/sygel-technology/sy-social>`_.
 
 To contribute to this module, please visit https://github.com/sygel-technology.
