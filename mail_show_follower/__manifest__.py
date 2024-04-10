@@ -4,7 +4,7 @@
 {
     "name": "Mail Show Follower",
     "summary": "Show CC document followers in mails.",
-    "version": "13.0.1.0.0",
+    "version": "15.0.1.0.1",
     "category": "Mail",
     "website": "https://www.sygel.es",
     "author": "Sygel, Odoo Community Association (OCA)",
