@@ -14,7 +14,7 @@ Installation
 
 To install this module, you need to:
 
-#. Only install
+* Only install
 
 
 Configuration
@@ -27,9 +27,10 @@ To configure this module, you need to:
 #. Select the models for which assignation notifications don't have to be generated.
 
 It is important to keep in mind that automatic assignment notifications are only created when a model meets the following requirements:
-#. The model is subclass of the abstract class mail.thread.
-#. The model has a user_id field.
-#. The tracking parameter of the user_id field is different to False.
+
+* The model is subclass of the abstract class mail.thread.
+* The model has a user_id field.
+* The tracking parameter of the user_id field is different to False.
 
 This module will not work with models that do not meet all those three requirements. Also, notification methods can be overriden, so the module would not work in those cases either.
 
@@ -41,17 +42,7 @@ Usage
 
 To use this module, you need to:
 
-#. No usage instructions needed.
-
-
-ROADMAP
-=======
-
-[ Enumerate known caveats and future potential improvements.
-  It is mostly intended for end-users, and can also help
-  potential new contributors discovering new features to implement. ]
-
-* ...
+* No usage instructions needed.
 
 
 Bug Tracker
