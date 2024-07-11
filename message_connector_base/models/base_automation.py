@@ -8,7 +8,7 @@ class BaseAutomation(models.Model):
     _inherit = "base.automation"
 
     def unlink(self):
-        """ Changes Message Template state before delete. """
+        """Changes Message Template state before delete."""
         for sel in self.filtered(lambda x: x.message_template_id):
-            sel.message_template_id.state = 'draft'
+            sel.message_template_id.state = "draft"
         super().unlink()

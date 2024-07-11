@@ -9,11 +9,9 @@ class MailThread(models.AbstractModel):
 
     def _notify_classify_recipients(self, recipient_data, model_name, msg_vals=None):
         result = super()._notify_classify_recipients(
-            recipient_data,
-            model_name,
-            msg_vals
+            recipient_data, model_name, msg_vals
         )
         for group in result:
-            if group.get("notification_group_name") not in ['customer', 'portal']:
-                group['has_button_access'] = False
+            if group.get("notification_group_name") not in ["customer", "portal"]:
+                group["has_button_access"] = False
         return result
