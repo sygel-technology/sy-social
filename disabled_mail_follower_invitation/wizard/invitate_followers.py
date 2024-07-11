@@ -5,6 +5,6 @@ from odoo import fields, models
 
 
 class InvitateFollowers(models.TransientModel):
-    _inherit = 'mail.wizard.invite'
+    _inherit = "mail.wizard.invite"
 
     notify = fields.Boolean(default=False)
