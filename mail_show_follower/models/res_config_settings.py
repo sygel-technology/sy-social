@@ -5,16 +5,16 @@ from odoo import fields, models
 
 
 class ResConfigSettings(models.TransientModel):
-    _inherit = 'res.config.settings'
+    _inherit = "res.config.settings"
 
     show_internal_users_cc = fields.Boolean(
-        string='Show Internal Users CC',
-        related='company_id.show_internal_users_cc',
-        readonly=False
+        string="Show Internal Users CC",
+        related="company_id.show_internal_users_cc",
+        readonly=False,
     )
     cc_blocked_models = fields.Many2many(
-        string='CC Blocked Models',
+        string="CC Blocked Models",
         comodel_name="ir.model",
-        related='company_id.cc_blocked_models',
-        readonly=False
+        related="company_id.cc_blocked_models",
+        readonly=False,
     )

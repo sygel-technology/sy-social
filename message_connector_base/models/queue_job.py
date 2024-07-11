@@ -8,10 +8,8 @@ class QueueJob(models.Model):
     _inherit = "queue.job"
 
     def cancel_now(self):
-        self.sudo().filtered(
-            lambda x: x.state in ["pending", "enqueued"]).write({
-                'state': 'cancelled'
-            }
+        self.sudo().filtered(lambda x: x.state in ["pending", "enqueued"]).write(
+            {"state": "cancelled"}
         )
 
     def requeue_sudo(self):

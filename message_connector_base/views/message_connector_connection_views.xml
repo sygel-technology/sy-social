@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8" ?>
 <!-- Copyright 2022 Ángel García de la Chica Herrera <angel.garcia@sygel.es>
      License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
 <odoo>
@@ -6,18 +6,20 @@
         <field name="name">message.connector.base.connection.tree</field>
         <field name="model">message.connector.connection</field>
         <field name="arch" type="xml">
-            <tree string="Logs"
-                create="0" delete="0"
+            <tree
+                string="Logs"
+                create="0"
+                delete="0"
                 decoration-danger="state=='error'"
                 decoration-success="state=='sent'"
-                >
-                <field name="messaging_service"/>
-                <field name="channel"/>
-                <field name="date"/>
-                <field name="state"/>
-                <field name="model"/>
-                <field name="user_id"/>
-                <button 
+            >
+                <field name="messaging_service" />
+                <field name="channel" />
+                <field name="date" />
+                <field name="state" />
+                <field name="model" />
+                <field name="user_id" />
+                <button
                     name="action_resend_messages"
                     class="btn-primary"
                     string="Resend Message"
@@ -34,28 +36,36 @@
         <field name="arch" type="xml">
             <form string="Log" create="0" delete="0" edit="0">
                 <header>
-                    <button name="action_resend_messages"
+                    <button
+                        name="action_resend_messages"
                         type="object"
                         class="oe_highlight"
                         string="Resend"
                         attrs="{'invisible':[('state','!=', 'error')]}"
                     />
-                    <field name="state" widget="statusbar" statusbar_visible="error,sent"/>
+                    <field
+                        name="state"
+                        widget="statusbar"
+                        statusbar_visible="error,sent"
+                    />
                 </header>
                 <sheet>
                     <group>
                         <group string="Message Details">
-                            <field name="messaging_service"/>
-                            <field name="channel"/>
-                            <field name="date"/>
-                            <field name="user_id"/>
-                            <field name="api_response"/>
+                            <field name="messaging_service" />
+                            <field name="channel" />
+                            <field name="date" />
+                            <field name="user_id" />
+                            <field name="api_response" />
                         </group>
                         <group string="Message">
-                            <field name="model"/>
-                            <label for="res_id" attrs="{'invisible': [('res_id', '=', 0)]}"/>
+                            <field name="model" />
+                            <label
+                                for="res_id"
+                                attrs="{'invisible': [('res_id', '=', 0)]}"
+                            />
                             <div attrs="{'invisible': [('res_id', '=', 0)]}">
-                                <field name="res_id"/>
+                                <field name="res_id" />
                                 <button
                                     name="action_go_to_record_id"
                                     type="object"
@@ -63,9 +73,12 @@
                                     class="fa fa-arrow-right oe_link"
                                 />
                             </div>
-                            <label for="message_template" attrs="{'invisible': [('message_template', '=', 0)]}"/>
+                            <label
+                                for="message_template"
+                                attrs="{'invisible': [('message_template', '=', 0)]}"
+                            />
                             <div attrs="{'invisible': [('message_template', '=', 0)]}">
-                                <field name="message_template"/>
+                                <field name="message_template" />
                                 <button
                                     name="action_go_to_message_template"
                                     type="object"
@@ -73,17 +86,20 @@
                                     class="fa fa-arrow-right oe_link"
                                 />
                             </div>
-                            <field name="add_report"/>
-                            <field name="message_report" attrs="{'invisible': [('add_report', '=', False)]}"/>
+                            <field name="add_report" />
+                            <field
+                                name="message_report"
+                                attrs="{'invisible': [('add_report', '=', False)]}"
+                            />
                         </group>
                     </group>
                     <notebook id="messaging_service_fields">
                         <page id="queue_jobs" string="Queue Jobs">
                             <field name="message_queue_job_ids">
                                 <tree>
-                                    <field name="date_created"/>
-                                    <field name="date_done"/>
-                                    <field name="state"/>
+                                    <field name="date_created" />
+                                    <field name="date_done" />
+                                    <field name="state" />
                                     <button
                                         type="object"
                                         name="requeue_sudo"
@@ -112,12 +128,30 @@
         <field name="model">message.connector.connection</field>
         <field name="arch" type="xml">
             <search string="Search Message Logs">
-                <field name="model"/>
-                <filter string="Error" name="log_error" domain="[('state', '=', 'error')]"/>
-                <filter string="Sent" name="log_sent" domain="[('state', '=', 'sent')]"/>
+                <field name="model" />
+                <filter
+                    string="Error"
+                    name="log_error"
+                    domain="[('state', '=', 'error')]"
+                />
+                <filter
+                    string="Sent"
+                    name="log_sent"
+                    domain="[('state', '=', 'sent')]"
+                />
                 <group expand="0" string="Group By">
-                    <filter string="Messaging Service" name="messaging_service" domain="[]" context="{'group_by': 'messaging_service'}"/>
-                    <filter string="Model" name="model" domain="[]" context="{'group_by': 'model'}"/>
+                    <filter
+                        string="Messaging Service"
+                        name="messaging_service"
+                        domain="[]"
+                        context="{'group_by': 'messaging_service'}"
+                    />
+                    <filter
+                        string="Model"
+                        name="model"
+                        domain="[]"
+                        context="{'group_by': 'model'}"
+                    />
                 </group>
            </search>
         </field>
@@ -129,9 +163,9 @@
         <field name="view_mode">tree,form</field>
         <field name="usage">menu</field>
         <field name="context">{'search_default_log_error': 1}</field>
-        <field name="view_id" ref="message_connector_base_connection_tree"/>
+        <field name="view_id" ref="message_connector_base_connection_tree" />
     </record>
-    
+
     <menuitem
         id="message_connector_base_log_menu"
         parent="message_connector_base_root_menu"
