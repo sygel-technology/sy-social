@@ -6,14 +6,14 @@
     "summary": "Block assignation notifications depending on model",
     "version": "16.0.1.0.0",
     "category": "Project",
-    "website": "https://www.sygel.es",
+    "website": "https://github.com/sygel-technology/sy-social",
     "author": "Sygel, Odoo Community Association (OCA)",
     "license": "AGPL-3",
     "application": False,
     "installable": True,
     "depends": [
         "mail",
-    ],    
+    ],
     "data": [
         "views/res_users_views.xml",
     ],
