@@ -7,8 +7,21 @@ from odoo import models
 class MailMail(models.Model):
     _inherit = "mail.mail"
 
-    def _send(self, auto_commit=False, raise_exception=False, smtp_session=None):
-        plain_text = '<div summary="o_mail_notification" style="padding: 0px; font-size: 10px;"><b>CC</b>: %s<hr style="background-color:rgb(204,204,204);border:medium none;clear:both;display:block;font-size:0px;min-height:1px;line-height:0; margin:4px 0 12px 0;"></div>'
+    def _send(
+        self,
+        auto_commit=False,
+        raise_exception=False,
+        smtp_session=None,
+        alias_domain_id=False,
+    ):
+        plain_text = (
+            '<div summary="o_mail_notification" '
+            'style="padding: 0px; font-size: 10px;">'
+            '<b>CC</b>: %s<hr style="background-color:rgb(204,204,204);'
+            "border:medium none;clear:both;display:block;"
+            "font-size:0px;min-height:1px;line-height:0; "
+            'margin:4px 0 12px 0;"></div>'
+        )
         group_portal = self.env.ref("base.group_portal")
         group_internal = self.env.ref("base.group_user")
         for mail_id in self.ids:
@@ -39,6 +52,7 @@ class MailMail(models.Model):
                     # users of the system.
                     if hasattr(obj, "message_follower_ids"):
                         partners_obj = obj.message_follower_ids.mapped("partner_id")
+
                         # internal partners
                         user_partner_ids = (
                             self.env["res.users"]
@@ -52,12 +66,13 @@ class MailMail(models.Model):
                             .mapped("partner_id")
                             .ids
                         )
+
                         partners_len = len(
                             partners_obj.filtered(
-                                lambda x: x.id not in user_partner_ids
+                                lambda x, upi=user_partner_ids: x.id not in upi
                                 and (
                                     not x.user_ids
-                                    or group_portal in x.user_ids.groups_id
+                                    or group_internal in x.user_ids.groups_id
                                 )
                             )
                         )
@@ -77,7 +92,7 @@ class MailMail(models.Model):
                                 )
                             if cc_internal:
                                 partners = partners_obj.filtered(
-                                    lambda x: x.id not in user_partner_ids
+                                    lambda x, upi=user_partner_ids: x.id not in upi
                                     and (
                                         not x.user_ids
                                         or (
@@ -89,7 +104,7 @@ class MailMail(models.Model):
                                 )
                             else:
                                 partners = partners_obj.filtered(
-                                    lambda x: x.id not in user_partner_ids
+                                    lambda x, upi=user_partner_ids: x.id not in upi
                                     and (
                                         not x.user_ids
                                         or group_portal in x.user_ids.groups_id
@@ -99,14 +114,16 @@ class MailMail(models.Model):
                             final_cc = None
                             mails = ""
                             for p in partners:
-                                mails += "%s &lt;%s&gt;, " % (p.name, p.email)
+                                mails += f"{p.name}{p.email}, "
                             # join texts
                             final_cc = plain_text % (mails[:-2])
                             # it is saved in the body_html field so that it does
                             # not appear in the odoo log
                             mail.body_html = final_cc + mail.body_html
-        return super(MailMail, self)._send(
+
+        return super()._send(
             auto_commit=auto_commit,
             raise_exception=raise_exception,
             smtp_session=smtp_session,
+            alias_domain_id=alias_domain_id,
         )

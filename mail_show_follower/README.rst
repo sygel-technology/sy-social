@@ -63,6 +63,7 @@ Contributors
 
 * Valentin Vinagre <valentin.vinagre@sygel.es>
 * Ángel García de la Chica Herrera <angel.garcia@sygel.es>
+* Roger Sans <roger.sans@sygel.es>
 
 
 Maintainer
