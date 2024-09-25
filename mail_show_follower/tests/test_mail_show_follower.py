@@ -61,7 +61,7 @@ class TestMailShowFollower(MailCommon):
         form = Form(
             cls.env["mail.compose.message"].with_context(
                 default_model=cls.partner_main._name,
-                default_res_id=cls.partner_main.id,
+                default_res_ids=[cls.partner_main.id],
             )
         )
         form.body = "<p>Test</p>"
