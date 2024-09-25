@@ -38,7 +38,13 @@ class MailMail(models.Model):
             )
         return partners_do_not_notify
 
-    def _send(self, auto_commit=False, raise_exception=False, smtp_session=None):
+    def _send(
+        self,
+        auto_commit=False,
+        raise_exception=False,
+        smtp_session=None,
+        alias_domain_id=False,
+    ):
         plain_text = """<div summary="o_mail_notification" style="padding: 0px;
  font-size: 10px;"><b>CC</b>: {}<hr style="background-color:rgb(204,204,204);
  border:medium none;clear:both;display:block;font-size:0px;min-height:1px;
@@ -76,4 +82,5 @@ class MailMail(models.Model):
             auto_commit=auto_commit,
             raise_exception=raise_exception,
             smtp_session=smtp_session,
+            alias_domain_id=alias_domain_id,
         )
