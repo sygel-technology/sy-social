@@ -1,0 +1,12 @@
+[project]
+name = "odoo-addons-sygel-technology-sy-social"
+version = "17.0.20241105.0"
+dependencies = [
+    "odoo-addon-disabled_mail_follower_invitation>=17.0dev,<17.1dev",
+    "odoo-addon-mail_show_follower>=17.0dev,<17.1dev",
+]
+classifiers=[
+    "Programming Language :: Python",
+    "Framework :: Odoo",
+    "Framework :: Odoo :: 17.0",
+]
