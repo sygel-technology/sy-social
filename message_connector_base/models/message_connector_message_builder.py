@@ -283,7 +283,9 @@ class MessageConnectorMessageBuilder(models.Model):
         res = None
         if self.message_connector_active:
             code = """model.env['message.connector.message.builder'].browse([{}]).action_send_message(model.browse(model._context.get('active_ids', model._context.get('active_id'))))
-            """.format(self.id)
+            """.format(
+                self.id
+            )
             self.automation_id = self.env["base.automation"].create(
                 {
                     "name": f"Message Connector {self.messaging_service}: {self.name}",
