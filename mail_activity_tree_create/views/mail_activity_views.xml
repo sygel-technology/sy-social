@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2025 Manuel Regidor <manuel.regidor@sygel.es>
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+	<record id="mail_activity_tree_create_view_tree" model="ir.ui.view">
+        <field name="name">mail.activity.tree.create.view.tree</field>
+        <field name="model">mail.activity</field>
+        <field name="inherit_id" ref="mail.mail_activity_view_tree" />
+        <field name="priority" eval="1" />
+        <field name="arch" type="xml">
+           <xpath expr="//tree" position="attributes">
+               <attribute name="create">true</attribute>
+           </xpath>
+        </field>
+    </record>
+</odoo>
