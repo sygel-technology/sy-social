@@ -22,6 +22,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [disabled_mail_follower_invitation](disabled_mail_follower_invitation/) | 17.0.1.0.0 |  | Disable mail in invitation of followers
+[mail_activity_tree_create](mail_activity_tree_create/) | 17.0.1.0.0 |  | Show Create/Import buttons in activity tree view
 [mail_show_follower](mail_show_follower/) | 17.0.1.0.0 |  | Show CC document followers in mails.
 
 [//]: # (end addons)
