@@ -3,12 +3,13 @@
 
 {
     "name": "Mail Hide Header Portal Button",
-    "version": "15.0.1.0.0",
+    "version": "16.0.1.0.0",
     "category": "Mail",
     "summary": "Hide header button to portal in emails",
     "author": "Sygel, Odoo Community Association (OCA)",
     "website": "https://github.com/sygel-technology/sy-social",
     "license": "AGPL-3",
     "depends": ["mail"],
+    "data": ["data/config_parameter.xml"],
     "installable": True,
 }
