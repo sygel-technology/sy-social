@@ -23,7 +23,12 @@ Configuration
 
 To configure this module, you need to:
 
-* No configuration instructions needed.
+#. Go to Settings > Technical > System Parameters
+#. Add the comma separated list of models which have not to attach the portal button
+   in the email header as the value for the parameter
+   "mail_hide_header_portal_button.models". For example, if the button needs to be hidden
+   in sale orders and purchase orders, the value for the parameter has to be as follows:
+   sale.order,purchase.order
 
 
 Usage
@@ -66,6 +71,7 @@ Contributors
 * Manuel Regidor <manuel.regidor@sygel.es>
 * Valentín Vinagre <valentin.vinagre@sygel.es>
 * Harald Panten <harald.panten@sygel.es>
+* Juan Alberto Raja<juan.raja@sygel.es>
 
 
 Maintainer
