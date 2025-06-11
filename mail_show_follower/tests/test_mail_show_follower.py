@@ -57,19 +57,19 @@ class TestMailShowFollower(MailCommon):
             ).ids
         )
 
-    def send_email_cc(cls):
+    def send_email_cc(self):
         form = Form(
-            cls.env["mail.compose.message"].with_context(
-                default_model=cls.partner_main._name,
-                default_res_id=cls.partner_main.id,
+            self.env["mail.compose.message"].with_context(
+                default_model=self.partner_main._name,
+                default_res_id=self.partner_main.id,
             )
         )
         form.body = "<p>Test</p>"
         saved_form = form.save()
-        with cls.mock_mail_gateway():
+        with self.mock_mail_gateway():
             saved_form._action_send_mail()
 
-        return cls.partner_main.message_ids[0].mail_ids[0]
+        return self.partner_main.message_ids[0].mail_ids[0]
 
     def test_show_cc_contacts(self):
         self.assertTrue(self.partner_main.message_follower_ids)
