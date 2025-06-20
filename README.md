@@ -23,6 +23,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [disabled_mail_follower_invitation](disabled_mail_follower_invitation/) | 16.0.1.0.0 |  | Disable mail in invitation of followers
 [mail_block_user_assigned_message](mail_block_user_assigned_message/) | 16.0.1.0.0 |  | Block assignation notifications depending on model
+[mail_hide_header_portal_button](mail_hide_header_portal_button/) | 16.0.1.0.0 |  | Hide header button to portal in emails
 [mail_show_follower](mail_show_follower/) | 16.0.1.0.0 |  | Show CC document followers in mails.
 
 [//]: # (end addons)
