@@ -1,0 +1,1 @@
+- This module only applies to the button attached through the template with ID "mail_notification_paynow". All the models that use this template can be included in the list of models for which the button has to be hidden. However, if other templates include a button to the portal in the email body, it will not be possible to hide those buttons using this module.
