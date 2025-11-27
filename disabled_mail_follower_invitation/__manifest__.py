@@ -4,7 +4,7 @@
 {
     "name": "Disabled Mail Follower Invitation",
     "summary": "Disable mail in invitation of followers",
-    "version": "17.0.1.0.0",
+    "version": "18.0.1.0.0",
     "author": "QubiQ, Odoo Community Association (OCA)",
     "website": "https://github.com/sygel-technology/sy-social",
     "category": "mail",
