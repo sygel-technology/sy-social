@@ -31,21 +31,17 @@ class TestMailShowFollower(MailCommon):
             ]
         )
 
-        cls.partner_main_email = "{} &lt;{}&gt;".format(
-            cls.partner_main.name,
-            cls.partner_main.email,
+        cls.partner_main_email = (
+            f"{cls.partner_main.name} &lt;{cls.partner_main.email}&gt;"
         )
-        cls.partner_follower_email = "{} &lt;{}&gt;".format(
-            cls.partner_follower.name,
-            cls.partner_follower.email,
+        cls.partner_follower_email = (
+            f"{cls.partner_follower.name} &lt;{cls.partner_follower.email}&gt;"
         )
-        cls.internal_user_1_email = "{} &lt;{}&gt;".format(
-            cls.internal_user_1.name,
-            cls.internal_user_1.email,
+        cls.internal_user_1_email = (
+            f"{cls.internal_user_1.name} &lt;{cls.internal_user_1.email}&gt;"
         )
-        cls.internal_user_2_email = "{} &lt;{}&gt;".format(
-            cls.internal_user_2.name,
-            cls.internal_user_2.email,
+        cls.internal_user_2_email = (
+            f"{cls.internal_user_2.name} &lt;{cls.internal_user_2.email}&gt;"
         )
 
         cls.partner_main.message_subscribe(
