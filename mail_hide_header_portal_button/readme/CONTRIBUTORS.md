@@ -1,0 +1,6 @@
+- [Sygel](https://www.sygel.es):
+  - Manuel Regidor
+  - Valentín Vinagre
+  - Harald Panten
+  - Juan Alberto Raja
+  - Alberto Martínez

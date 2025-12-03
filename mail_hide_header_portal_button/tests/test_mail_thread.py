@@ -10,12 +10,13 @@ class TestMailThreadNotifyRecipients(TransactionCase):
     @classmethod
     def setUpClass(cls):
         super().setUpClass()
-        cls.model = cls.env["mail.thread"]
+        cls.model = cls.env["res.partner"]
         cls.ir_config = cls.env["ir.config_parameter"].sudo()
         cls.ir_config.set_param("mail_hide_header_portal_button.models", "")
 
     def test_has_button_access_only_customer_portal(self):
-        """Only customer and portal have access to the button when model is not hidden."""
+        """Only customer and portal have access to the button
+        when model is not hidden."""
         result_super = [
             {"notification_group_name": "customer"},
             {"notification_group_name": "portal"},
@@ -23,11 +24,11 @@ class TestMailThreadNotifyRecipients(TransactionCase):
             {"notification_group_name": "other"},
         ]
         with patch(
-            "odoo.addons.mail.models.mail_thread.MailThread._notify_get_recipients_classify",
+            "odoo.addons.mail.models.mail_thread.MailThread."
+            "_notify_get_recipients_classify",
             return_value=result_super,
         ):
             result = self.model._notify_get_recipients_classify([], "res.partner", {})
-
         for group in result:
             if group["notification_group_name"] in ["customer", "portal"]:
                 # Para customer y portal: has_button_access debe ser True
@@ -46,7 +47,8 @@ class TestMailThreadNotifyRecipients(TransactionCase):
             {"notification_group_name": "internal"},
         ]
         with patch(
-            "odoo.addons.mail.models.mail_thread.MailThread._notify_get_recipients_classify",
+            "odoo.addons.mail.models.mail_thread.MailThread."
+            "_notify_get_recipients_classify",
             return_value=result_super,
         ):
             result = self.model._notify_get_recipients_classify([], "res.partner", {})
@@ -68,11 +70,13 @@ class TestMailThreadNotifyRecipients(TransactionCase):
         ]
 
         with patch(
-            "odoo.addons.mail.models.mail_thread.MailThread._notify_get_recipients_classify",
+            "odoo.addons.mail.models.mail_thread.MailThread."
+            "_notify_get_recipients_classify",
             return_value=result_super,
         ):
             result = self.model._notify_get_recipients_classify([], "res.partner", {})
 
-        # Todos los grupos deben tener has_button_access=False cuando el modelo está oculto
+        # Todos los grupos deben tener has_button_access=False
+        #  cuando el modelo está oculto
         for group in result:
             self.assertFalse(group.get("has_button_access", False))
