@@ -1,0 +1,1 @@
+- This module, despite having Sygel has creator, has an OCA version, mail_show_follower. This module offers a lightweight version 100% controlled by Sygel

@@ -6,7 +6,7 @@ from odoo.tests import Form
 from odoo.addons.mail.tests.common import MailCommon
 
 
-class TestMailShowFollower(MailCommon):
+class TestMailShowFollowerCC(MailCommon):
     @classmethod
     def setUpClass(cls):
         super().setUpClass()

@@ -44,6 +44,8 @@ class MailMail(models.Model):
         raise_exception=False,
         smtp_session=None,
         alias_domain_id=False,
+        mail_server=False,
+        post_send_callback=None,
     ):
         plain_text = """<div summary="o_mail_notification" style="padding: 0px;
  font-size: 10px;"><b>CC</b>: {}<hr style="background-color:rgb(204,204,204);
@@ -83,4 +85,6 @@ class MailMail(models.Model):
             raise_exception=raise_exception,
             smtp_session=smtp_session,
             alias_domain_id=alias_domain_id,
+            mail_server=mail_server,
+            post_send_callback=post_send_callback,
         )

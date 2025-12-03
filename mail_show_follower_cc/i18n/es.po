@@ -1,6 +1,6 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
-# 	* mail_show_follower
+# 	* mail_show_follower_cc
 #
 msgid ""
 msgstr ""
@@ -15,8 +15,8 @@ msgstr ""
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: \n"
 
-#. module: mail_show_follower
-#: model_terms:ir.ui.view,arch_db:mail_show_follower.res_config_settings_view_form
+#. module: mail_show_follower_cc
+#: model_terms:ir.ui.view,arch_db:mail_show_follower_cc.res_config_settings_view_form
 msgid ""
 "<span class=\"o_form_label\">CC Blocked Models</span>\n"
 "                        <span class=\"fa fa-lg fa-building-o\" title=\"CC Blocked Models\" aria-label=\"Values set here are company-specific.\" groups=\"base.group_multi_company\"/>"
@@ -24,54 +24,54 @@ msgstr ""
 "<span class=\"o_form_label\">Modelos Bloqueados CC</span>\n"
 "                        <span class=\"fa fa-lg fa-building-o\" title=\"CC Blocked Models\" aria-label=\"Values set here are company-specific.\" groups=\"base.group_multi_company\"/>"
 
-#. module: mail_show_follower
-#: model_terms:ir.ui.view,arch_db:mail_show_follower.res_config_settings_view_form
+#. module: mail_show_follower_cc
+#: model_terms:ir.ui.view,arch_db:mail_show_follower_cc.res_config_settings_view_form
 msgid "Add internal users in cc mails details"
 msgstr "Añadir usuarios internos en los detalles de CC mails"
 
-#. module: mail_show_follower
-#: model:ir.model.fields,field_description:mail_show_follower.field_res_company__cc_blocked_models
-#: model:ir.model.fields,field_description:mail_show_follower.field_res_config_settings__cc_blocked_models
+#. module: mail_show_follower_cc
+#: model:ir.model.fields,field_description:mail_show_follower_cc.field_res_company__cc_blocked_models
+#: model:ir.model.fields,field_description:mail_show_follower_cc.field_res_config_settings__cc_blocked_models
 msgid "CC Blocked Models"
 msgstr "CC Modelos bloqueados"
 
-#. module: mail_show_follower
-#: model:ir.model,name:mail_show_follower.model_res_company
+#. module: mail_show_follower_cc
+#: model:ir.model,name:mail_show_follower_cc.model_res_company
 msgid "Companies"
 msgstr "Compañías"
 
-#. module: mail_show_follower
-#: model:ir.model,name:mail_show_follower.model_res_config_settings
+#. module: mail_show_follower_cc
+#: model:ir.model,name:mail_show_follower_cc.model_res_config_settings
 msgid "Config Settings"
 msgstr "Opciones de configuración"
 
-#. module: mail_show_follower
-#: model_terms:ir.ui.view,arch_db:mail_show_follower.res_config_settings_view_form
+#. module: mail_show_follower_cc
+#: model_terms:ir.ui.view,arch_db:mail_show_follower_cc.res_config_settings_view_form
 msgid "Do not show CC when emails are sent from the following models"
 msgstr "No mostrar CC cuando se envían correos electrónicos desde los siguientes modelos"
 
-#. module: mail_show_follower
-#: model_terms:ir.ui.view,arch_db:mail_show_follower.res_config_settings_view_form
+#. module: mail_show_follower_cc
+#: model_terms:ir.ui.view,arch_db:mail_show_follower_cc.res_config_settings_view_form
 msgid "Models"
 msgstr "Modelos"
 
-#. module: mail_show_follower
-#: model:ir.model,name:mail_show_follower.model_mail_mail
+#. module: mail_show_follower_cc
+#: model:ir.model,name:mail_show_follower_cc.model_mail_mail
 msgid "Outgoing Mails"
 msgstr "Correos salientes"
 
-#. module: mail_show_follower
-#: model:ir.model.fields,field_description:mail_show_follower.field_res_company__show_internal_users_cc
-#: model:ir.model.fields,field_description:mail_show_follower.field_res_config_settings__show_internal_users_cc
+#. module: mail_show_follower_cc
+#: model:ir.model.fields,field_description:mail_show_follower_cc.field_res_company__show_internal_users_cc
+#: model:ir.model.fields,field_description:mail_show_follower_cc.field_res_config_settings__show_internal_users_cc
 msgid "Show Internal Users CC"
 msgstr "Mostrar usuarios internos CC"
 
-#. module: mail_show_follower
-#: model:ir.model.fields,field_description:mail_show_follower.field_res_users__show_in_cc
+#. module: mail_show_follower_cc
+#: model:ir.model.fields,field_description:mail_show_follower_cc.field_res_users__show_in_cc
 msgid "Show in CC"
 msgstr "Mostrar en CC"
 
-#. module: mail_show_follower
-#: model:ir.model,name:mail_show_follower.model_res_users
+#. module: mail_show_follower_cc
+#: model:ir.model,name:mail_show_follower_cc.model_res_users
 msgid "Users"
 msgstr "Usuarios"

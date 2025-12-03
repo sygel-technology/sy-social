@@ -1,6 +1,6 @@
-==================
-Mail Show Follower
-==================
+=====================
+Mail show follower CC
+=====================
 
 .. 
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -17,7 +17,7 @@ Mail Show Follower
     :target: http://www.gnu.org/licenses/agpl-3.0-standalone.html
     :alt: License: AGPL-3
 .. |badge3| image:: https://img.shields.io/badge/github-sygel--technology%2Fsy--social-lightgray.png?logo=github
-    :target: https://github.com/sygel-technology/sy-social/tree/17.0/mail_show_follower
+    :target: https://github.com/sygel-technology/sy-social/tree/18.0/mail_show_follower_cc
     :alt: sygel-technology/sy-social
 
 |badge1| |badge2| |badge3|
@@ -39,11 +39,18 @@ Configuration
 
 To configure this module, you need to:
 
-1. Go General settings/Discuss/Show Internal Users CC and set if want to
-   show or not internal users in cc details.
+1. Go General settings/General Settings/Emails/Show Internal Users CC
+   and set if want to show or not internal users in cc details.
 2. Go Settings/Users & Company/Users and select any user in
    'Preferences' check or not the 'Show in CC' field if this user need
    to appear in the cc note.
+
+Known issues / Roadmap
+======================
+
+-  This module, despite having Sygel has creator, has an OCA version,
+   mail_show_follower. This module offers a lightweight version 100%
+   controlled by Sygel
 
 Bug Tracker
 ===========
@@ -51,7 +58,7 @@ Bug Tracker
 Bugs are tracked on `GitHub Issues <https://github.com/sygel-technology/sy-social/issues>`_.
 In case of trouble, please check there if your issue has already been reported.
 If you spotted it first, help us to smash it by providing a detailed and welcomed
-`feedback <https://github.com/sygel-technology/sy-social/issues/new?body=module:%20mail_show_follower%0Aversion:%2017.0%0A%0A**Steps%20to%20reproduce**%0A-%20...%0A%0A**Current%20behavior**%0A%0A**Expected%20behavior**>`_.
+`feedback <https://github.com/sygel-technology/sy-social/issues/new?body=module:%20mail_show_follower_cc%0Aversion:%2018.0%0A%0A**Steps%20to%20reproduce**%0A-%20...%0A%0A**Current%20behavior**%0A%0A**Expected%20behavior**>`_.
 
 Do not contact contributors directly about support or help with technical issues.
 
@@ -66,12 +73,13 @@ Authors
 Contributors
 ------------
 
-- Valentín Vinagre <valentin.vinagre@sygel.es>
-- Manuel Regidor <manuel.regidor@sygel.es>
+-  Valentín Vinagre <valentin.vinagre@sygel.es>
+-  Manuel Regidor <manuel.regidor@sygel.es>
+-  Alberto Martínez <alberto.martinez@sygel.es>
 
 Maintainers
 -----------
 
-This module is part of the `sygel-technology/sy-social <https://github.com/sygel-technology/sy-social/tree/17.0/mail_show_follower>`_ project on GitHub.
+This module is part of the `sygel-technology/sy-social <https://github.com/sygel-technology/sy-social/tree/18.0/mail_show_follower_cc>`_ project on GitHub.
 
 You are welcome to contribute.
