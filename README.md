@@ -16,6 +16,13 @@ Addons concerning odoo's social ERP features and messaging in general
 <!-- prettier-ignore-start -->
 
 [//]: # (addons)
+
+Available addons
+----------------
+addon | version | maintainers | summary
+--- | --- | --- | ---
+[mail_show_follower_cc](mail_show_follower_cc/) | 18.0.1.0.0 |  | Show CC document followers in mails.
+
 [//]: # (end addons)
 
 <!-- prettier-ignore-end -->
