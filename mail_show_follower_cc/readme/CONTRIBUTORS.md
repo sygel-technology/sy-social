@@ -1,0 +1,3 @@
+- Valentín Vinagre \<<valentin.vinagre@sygel.es>\>
+- Manuel Regidor \<<manuel.regidor@sygel.es>\>
+- Alberto Martínez \<<alberto.martinez@sygel.es>\>
