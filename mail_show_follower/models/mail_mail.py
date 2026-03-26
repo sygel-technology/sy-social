@@ -8,7 +8,14 @@ class MailMail(models.Model):
     _inherit = "mail.mail"
 
     def _send(self, auto_commit=False, raise_exception=False, smtp_session=None):
-        plain_text = '<div summary="o_mail_notification" style="padding: 0px; font-size: 10px;"><b>CC</b>: %s<hr style="background-color:rgb(204,204,204);border:medium none;clear:both;display:block;font-size:0px;min-height:1px;line-height:0; margin:4px 0 12px 0;"></div>'
+        plain_text = (
+            '<div summary="o_mail_notification" '
+            'style="padding: 0px; font-size: 10px;">'
+            "<b>CC</b>: %s"
+            '<hr style="background-color:rgb(204,204,204);border:medium none;'
+            "clear:both;display:block;font-size:0px;min-height:1px;"
+            'line-height:0; margin:4px 0 12px 0;"></div>'
+        )
         group_portal = self.env.ref("base.group_portal")
         group_internal = self.env.ref("base.group_user")
         for mail_id in self.ids:
