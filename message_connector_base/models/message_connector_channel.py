@@ -25,11 +25,10 @@ class MessageConnectorChannel(models.Model):
         default=lambda self: self.env.company,
     )
     message_connector_active = fields.Boolean(
-        string="Message Connector Active", compute="_compute_message_connector_active"
+        compute="_compute_message_connector_active"
     )
-    name = fields.Char(string="Name", required=True)
+    name = fields.Char(required=True)
     state = fields.Selection(
-        string="State",
         selection=[
             ("draft", "Draft"),
             ("validated", "Validated"),
@@ -45,11 +44,9 @@ class MessageConnectorChannel(models.Model):
     messaging_service = fields.Selection(
         string="Message Service", selection="_get_message_services", required=True
     )
-    description = fields.Html(string="Description")
+    description = fields.Html()
     message_template_ids = fields.One2many(
-        comodel_name="message.connector.message.builder",
-        inverse_name="channel_id",
-        string="Message Templates",
+        comodel_name="message.connector.message.builder", inverse_name="channel_id"
     )
 
     def _compute_message_connector_active(self):

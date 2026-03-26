@@ -8,7 +8,6 @@ class MessageConnectorFieldBuilder(models.Model):
     _inherit = "message.connector.field.builder"
 
     short = fields.Boolean(
-        string="Short",
         help="Slack field to position the fields in two "
         "columns (Short = True) or in one (Short = False).",
         default=True,

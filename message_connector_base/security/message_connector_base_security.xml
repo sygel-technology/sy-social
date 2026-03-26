@@ -2,10 +2,7 @@
 <!-- Copyright 2022 Ángel García de la Chica Herrera <angel.garcia@sygel.es>
      License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
 <odoo noupdate="1">
-    <record
-        id="message_connector_base.group_message_connector_manager"
-        model="res.groups"
-    >
+    <record id="group_message_connector_manager" model="res.groups">
         <field name="name">Message Connector Manager</field>
         <field
             name="users"

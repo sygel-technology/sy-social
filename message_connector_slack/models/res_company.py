@@ -10,15 +10,13 @@ class ResCompany(models.Model):
     slack_log_channel_test = fields.Many2one(
         comodel_name="message.connector.channel", string="Test Channel Test"
     )
-    slack_token_test = fields.Char(string="Slack Token Test")
+    slack_token_test = fields.Char()
     slack_log_channel_production = fields.Many2one(
         comodel_name="message.connector.channel", string="Test Channel Production"
     )
-    slack_token_production = fields.Char(string="Slack Token Production")
+    slack_token_production = fields.Char()
     slack_active = fields.Boolean(string="Active Slack", default=False)
-    slack_token = fields.Char(
-        string="Slack Token", compute="_compute_slack_token", store=True
-    )
+    slack_token = fields.Char(compute="_compute_slack_token", store=True)
     slack_active_production = fields.Boolean(
         string="Test / Production Environment", default=False
     )

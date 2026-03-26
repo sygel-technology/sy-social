@@ -22,18 +22,12 @@ class MessageConnectorConnection(models.Model):
         """Return the list of message service installed."""
         return self.env.company.get_message_services()
 
-    display_name = fields.Char(
-        string="Display Name", compute="_compute_display_name", store=True
-    )
-    channel = fields.Char(
-        string="Channel",
-    )
+    display_name = fields.Char(compute="_compute_display_name", store=True)
+    channel = fields.Char()
     date = fields.Datetime(
-        string="Date",
         default=lambda self: fields.Datetime.now(),
     )
     state = fields.Selection(
-        string="State",
         selection=[
             ("new", "New"),
             ("progress", "In progress"),
@@ -42,7 +36,7 @@ class MessageConnectorConnection(models.Model):
         ],
         default="new",
     )
-    model = fields.Char(string="Model")
+    model = fields.Char()
     api_response = fields.Text(string="API Response")
     res_id = fields.Integer(string="Record id")
     user_id = fields.Many2one(comodel_name="res.users", string="User")
@@ -53,7 +47,7 @@ class MessageConnectorConnection(models.Model):
     add_report = fields.Boolean(string="The Meessage Includes a PDF Report")
     message_report = fields.Char(string="Message PDF Report")
     data_file = fields.Text(string="Data PDF Report")
-    error = fields.Char(string="Error")
+    error = fields.Char()
     message_queue_job_ids = fields.Many2many(
         comodel_name="queue.job",
         string="Queue Jobs",

@@ -37,8 +37,6 @@ To use this module, you need to:
 ROADMAP
 =======
 
-* ...
-
 
 Bug Tracker
 ===========

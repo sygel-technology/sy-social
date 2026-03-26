@@ -10,7 +10,6 @@ class MessageConnectorMessageBuilder(models.Model):
     _inherit = "message.connector.message.builder"
 
     message_header = fields.Char(
-        string="Message Header",
         states={"active": [("readonly", True)], "canceled": [("readonly", True)]},
         help="Optional field to add a text in the header",
     )
@@ -27,7 +26,6 @@ class MessageConnectorMessageBuilder(models.Model):
         help="To format the header in boldface type",
     )
     title = fields.Char(
-        string="Title",
         states={"active": [("readonly", True)], "canceled": [("readonly", True)]},
         help="To add a title in the attachment",
     )
@@ -49,13 +47,11 @@ class MessageConnectorMessageBuilder(models.Model):
         "Format: subtitle + record_name",
     )
     color = fields.Char(
-        string="Color",
         states={"active": [("readonly", True)], "canceled": [("readonly", True)]},
         default="#FFFFFF",
         help="To change de line color of the attachment",
     )
     attachment = fields.Text(
-        string="Attachment",
         states={"active": [("readonly", True)], "canceled": [("readonly", True)]},
     )
     prefix_button_name = fields.Char(
@@ -74,7 +70,6 @@ class MessageConnectorMessageBuilder(models.Model):
         ondelete="cascade",
     )
     suffix_button_name = fields.Char(
-        string="Suffix Button Name",
         help="The button name will be prefix + field_id + sufix."
         "The fields prefix, field_button_id and suffix are all optional.",
         states={"active": [("readonly", True)], "canceled": [("readonly", True)]},

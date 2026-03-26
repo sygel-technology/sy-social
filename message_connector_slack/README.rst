@@ -1,6 +1,6 @@
 .. image:: https://img.shields.io/badge/licence-AGPL--3-blue.svg
-	:target: http://www.gnu.org/licenses/agpl
-	:alt: License: AGPL-3
+  :target: http://www.gnu.org/licenses/agpl
+  :alt: License: AGPL-3
 
 =======================
 Message Connector Slack
@@ -68,8 +68,6 @@ ROADMAP
   It is mostly intended for end-users, and can also help
   potential new contributors discovering new features to implement. ]
 
-* ...
-
 
 Bug Tracker
 ===========
@@ -96,11 +94,6 @@ Contributors
 
 * Ángel García de la Chica Herrera <angel.garcia@sygel.es>
 
-
-Maintainer
-~~~~~~~~~~
-
-This module is maintained by Sygel.
 
 Maintainer
 ~~~~~~~~~~

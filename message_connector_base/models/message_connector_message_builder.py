@@ -27,15 +27,13 @@ class MessageConnectorMessageBuilder(models.Model):
         default=lambda self: self.env.company,
     )
     message_connector_active = fields.Boolean(
-        string="Message Connector Active", compute="_compute_message_connector_active"
+        compute="_compute_message_connector_active"
     )
     name = fields.Char(
-        string="Name",
         states={"active": [("readonly", True)], "canceled": [("readonly", True)]},
         required=True,
     )
     state = fields.Selection(
-        string="State",
         selection=[("draft", "Draft"), ("active", "Active"), ("canceled", "Canceled")],
         default="draft",
         compute="_compute_state",

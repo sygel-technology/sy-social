@@ -19,10 +19,9 @@ class MessageConnectorFieldBuilder(models.Model):
     _description = "Message Connector Field Builder"
     _order = "sequence asc"
 
-    sequence = fields.Integer(string="Sequence", default=30)
-    name = fields.Char(string="Name", required=True)
+    sequence = fields.Integer(default=30)
+    name = fields.Char(required=True)
     field_origin = fields.Selection(
-        string="Field Origin",
         selection=[
             ("field", "Field"),
             ("rel_field", "Relational Field"),
@@ -32,7 +31,6 @@ class MessageConnectorFieldBuilder(models.Model):
         default="field",
     )
     field_type = fields.Selection(
-        string="Field Type",
         selection=lambda self: self._get_odoo_fields_types(),
         compute="_get_field_type",
         readonly=False,
@@ -69,10 +67,8 @@ class MessageConnectorFieldBuilder(models.Model):
         ondelete="cascade",
         domain="[('id', 'in', subfield_domain_ids)]",
     )
-    field_expression = fields.Char(
-        string="Field Expression", compute="_compute_field_expression"
-    )
-    default_value = fields.Char(string="Default Value", required=True)
+    field_expression = fields.Char(compute="_compute_field_expression")
+    default_value = fields.Char(required=True)
     eval_expression = fields.Boolean(string="Evaluate Expression")
     select_several_fields = fields.Boolean(
         string="Select Several Subfields",
@@ -82,7 +78,6 @@ class MessageConnectorFieldBuilder(models.Model):
     )
     currency_id = fields.Many2one(comodel_name="res.currency", string="Currency")
     truncate = fields.Boolean(
-        string="Truncate",
         default=True,
     )
 

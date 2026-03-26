@@ -109,11 +109,6 @@ class ResConfigSettings(models.TransientModel):
                 }
             ]
             vals.update(
-                {
-                    "channel": channel,
-                    "attachments": attachments,
-                    "msg": "Test message",
-                    "attachments": attachments,
-                }
+                {"channel": channel, "attachments": attachments, "msg": "Test message"}
             )
         return vals

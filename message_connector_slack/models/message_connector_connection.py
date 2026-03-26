@@ -12,9 +12,7 @@ from odoo.tools.safe_eval import safe_eval
 class MessageConnectorConnection(models.Model):
     _inherit = "message.connector.connection"
 
-    attachments = fields.Text(
-        string="Attachments",
-    )
+    attachments = fields.Text()
     msg = fields.Char(string="Message")
 
     def _slack_send_message(self):
