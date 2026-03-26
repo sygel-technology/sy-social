@@ -49,6 +49,8 @@ ROADMAP
    templates include a button to the portal in the email body, it will not be possible
    to hide those buttons using this module.
 
+*  The portal body button has been removed from the upper versions of Odoo. A similar mode should be used: mail_hide_header_portal_button
+
 
 Bug Tracker
 ===========
