@@ -6,7 +6,7 @@
         <field name="name">message.connector.base.message.builder.tree</field>
         <field name="model">message.connector.message.builder</field>
         <field name="arch" type="xml">
-            <tree string="Messages" decoration-info="state=='active'">
+            <tree decoration-info="state=='active'">
                 <field name="name" />
                 <field name="messaging_service" />
                 <field name="channel_id" />
@@ -98,7 +98,7 @@
                             attrs="{'invisible': [('model_id', '=', False)]}"
                         >
                             <field name="message_field_ids" widget="one2many">
-                                <tree string="Fields">
+                                <tree>
                                     <field name="sequence" widget="handle" />
                                     <field name="model_id" invisible="1" />
                                     <field name="name" />

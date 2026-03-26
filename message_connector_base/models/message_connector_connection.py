@@ -60,6 +60,7 @@ class MessageConnectorConnection(models.Model):
         '<message_service> message <date_message_sent> from <model_name>'
         """
         for sel in self:
+            # pylint: disable=W8120,W8115,E8105
             sel.display_name = _(
                 "{} message {:%d%m%Y-%H:%M} from {}".format(
                     sel.messaging_service, sel.date, sel.model

@@ -203,7 +203,7 @@ class MessageConnectorMessageBuilder(models.Model):
             server_action_id = sel.automation_id.action_server_id
             sel.automation_id.unlink()
             server_action_id.unlink()
-        super().unlink()
+        return super().unlink()
 
     def _get_fields(self, record_id):
         """Gets the fields."""
@@ -280,10 +280,12 @@ class MessageConnectorMessageBuilder(models.Model):
         self.ensure_one()
         res = None
         if self.message_connector_active:
-            code = """model.env['message.connector.message.builder'].browse([{}]).action_send_message(model.browse(model._context.get('active_ids', model._context.get('active_id'))))
-            """.format(
-                self.id
-            )
+            code = (
+                "model.env['message.connector.message.builder'].browse([{}])"
+                ".action_send_message(model.browse(model._context.get("
+                "'active_ids', model._context.get('active_id'))))"
+                ""
+            ).format(self.id)
             self.automation_id = self.env["base.automation"].create(
                 {
                     "name": f"Message Connector {self.messaging_service}: {self.name}",
@@ -344,6 +346,7 @@ class MessageConnectorMessageBuilder(models.Model):
         for sel in self.filtered(lambda x: x.automation_id):
             if sel.automation_id.model_id != sel.model_id:
                 raise ValidationError(
+                    # # pylint: disable=W8120
                     _(
                         "The model cannot be changed once the auto action is "
                         "created. If you want to change the model, first remove "
