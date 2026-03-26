@@ -4,7 +4,7 @@
 {
     "name": "Message Connector Base",
     "summary": "Message Connector Base",
-    "version": "15.0.1.0.0",
+    "version": "15.0.1.0.1",
     "category": "Custom",
     "website": "https://github.com/sygel-technology/sy-social",
     "author": "Sygel, Odoo Community Association (OCA)",

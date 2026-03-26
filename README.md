@@ -25,8 +25,8 @@ addon | version | maintainers | summary
 [mail_hide_body_portal_button](mail_hide_body_portal_button/) | 15.0.1.0.0 |  | Hide portal button automatically attached to some emails
 [mail_hide_header_portal_button](mail_hide_header_portal_button/) | 15.0.1.0.0 |  | Hide header button to portal in emails
 [mail_show_follower](mail_show_follower/) | 15.0.1.0.1 |  | Show CC document followers in mails.
-[message_connector_base](message_connector_base/) | 15.0.1.0.0 |  | Message Connector Base
-[message_connector_slack](message_connector_slack/) | 15.0.1.0.0 |  | Message Connector Slack
+[message_connector_base](message_connector_base/) | 15.0.1.0.1 |  | Message Connector Base
+[message_connector_slack](message_connector_slack/) | 15.0.1.0.1 |  | Message Connector Slack
 
 [//]: # (end addons)
 
