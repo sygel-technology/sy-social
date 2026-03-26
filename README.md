@@ -1,4 +1,6 @@
 
+
+# sy-social
 <!-- /!\ Non OCA Context : Set here the badge of your runbot / runboat instance. -->
 [![Pre-commit Status](https://github.com/sygel-technology/sy-social/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/sygel-technology/sy-social/actions/workflows/pre-commit.yml?query=branch%3A17.0)
 [![Build Status](https://github.com/sygel-technology/sy-social/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/sygel-technology/sy-social/actions/workflows/test.yml?query=branch%3A17.0)
@@ -6,8 +8,6 @@
 <!-- /!\ Non OCA Context : Set here the badge of your translation instance. -->
 
 <!-- /!\ do not modify above this line -->
-
-# sy-social
 
 Addons concerning odoo's social ERP features and messaging in general
 
