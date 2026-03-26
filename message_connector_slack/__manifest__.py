@@ -11,7 +11,7 @@
     "license": "AGPL-3",
     "application": False,
     "installable": True,
-    "external_dependencies": {"python": ["slackclient"]},
+    "external_dependencies": {"python": ["slackclient", "slack"]},
     "depends": ["message_connector_base"],
     "data": [
         "data/slack_data.xml",

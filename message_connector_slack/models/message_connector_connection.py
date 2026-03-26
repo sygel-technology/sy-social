@@ -75,4 +75,4 @@ class MessageConnectorConnection(models.Model):
                 [("date", "<", general_timeout), ("messaging_service", "!=", "slack")]
             ).unlink()
         else:
-            super()._gc_messages()
+            return super()._gc_messages()

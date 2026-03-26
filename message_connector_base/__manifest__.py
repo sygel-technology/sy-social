@@ -12,6 +12,7 @@
     "application": False,
     "installable": True,
     "depends": ["base", "base_setup", "base_automation", "mass_editing", "queue_job"],
+    "external_dependencies": {"python": ["bs4"]},
     "data": [
         "data/actions_server.xml",
         "data/message_connector_base_queue_job.xml",

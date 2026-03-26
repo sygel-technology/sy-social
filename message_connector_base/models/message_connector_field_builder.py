@@ -32,7 +32,7 @@ class MessageConnectorFieldBuilder(models.Model):
     )
     field_type = fields.Selection(
         selection=lambda self: self._get_odoo_fields_types(),
-        compute="_get_field_type",
+        compute="_compute_field_type",
         readonly=False,
         store=True,
     )
@@ -100,7 +100,7 @@ class MessageConnectorFieldBuilder(models.Model):
         ]
 
     @api.depends("field_origin", "field_id")
-    def _get_field_type(self):
+    def _compute_field_type(self):
         """Gets the field type automatically if it is of type
         field or rel_field.
         """
@@ -234,11 +234,9 @@ class MessageConnectorFieldBuilder(models.Model):
             sel.field_id = field_id
             sel.field_type = field_id.ttype
 
-    """
-        --------------------------------------------------
-        Functions to display the values based on record_id
-        --------------------------------------------------
-    """
+    # --------------------------------------------------
+    # Functions to display the values based on record_id
+    # --------------------------------------------------
 
     def _get_field_value(self, field_expression, record_id, map_names=False):
         """Returns the field value.
@@ -257,11 +255,9 @@ class MessageConnectorFieldBuilder(models.Model):
             value = ", ".join(value)
         return value
 
-    """
-        The following functions are called depending on the field type.
-        If you need to change the format depending on the type of functions,
-        inherit from any of these functions.
-    """
+    # The following functions are called depending on the field type.
+    # If you need to change the format depending on the type of functions,
+    # inherit from any of these functions.
 
     def _boolean_field(self, field_expression, record_id):
         """Returns the field of type boolean."""
@@ -341,7 +337,7 @@ class MessageConnectorFieldBuilder(models.Model):
         if value:
             currency_id = self.env.company.currency_id
             if self.field_type == "python" and not self.eval_expression:
-                currency_id == self.currency_id
+                currency_id = self.currency_id
             elif record_id._fields["currency_id"] and record_id.currency_id:
                 currency_id = record_id.currency_id
             value = self.env["ir.qweb.field.monetary"].value_to_html(

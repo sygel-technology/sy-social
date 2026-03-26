@@ -188,11 +188,9 @@ class MessageConnectorMessageBuilder(models.Model):
         """Checks that if the add_button_name option is checked there is at
         least one field to construct the button name.
         """
-        for sel in self.filtered(lambda x: x.add_button_action):
+        for rec in self.filtered(lambda x: x.add_button_action):
             if not (
-                self.prefix_button_name
-                or self.field_button_id
-                or self.suffix_button_name
+                rec.prefix_button_name or rec.field_button_id or rec.suffix_button_name
             ):
                 raise ValidationError(
                     _(

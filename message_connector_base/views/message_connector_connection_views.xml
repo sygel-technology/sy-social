@@ -7,7 +7,6 @@
         <field name="model">message.connector.connection</field>
         <field name="arch" type="xml">
             <tree
-                string="Logs"
                 create="0"
                 delete="0"
                 decoration-danger="state=='error'"

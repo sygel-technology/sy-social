@@ -11,4 +11,4 @@ class BaseAutomation(models.Model):
         """Changes Message Template state before delete."""
         for sel in self.filtered(lambda x: x.message_template_id):
             sel.message_template_id.state = "draft"
-        super().unlink()
+        return super().unlink()
