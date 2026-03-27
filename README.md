@@ -21,6 +21,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
+[mail_hide_header_portal_button](mail_hide_header_portal_button/) | 18.0.1.0.0 |  | Hide header button to portal in emails
 [mail_show_follower_cc](mail_show_follower_cc/) | 18.0.1.0.0 |  | Show CC document followers in mails.
 
 [//]: # (end addons)
