@@ -1,0 +1,1 @@
+- This module replaces the old mail_hide_body_portal_button, because the portal button has been removed and now it only appears in the header
