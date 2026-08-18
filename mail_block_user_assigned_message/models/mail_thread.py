@@ -14,14 +14,17 @@ class MailThread(models.AbstractModel):
     def message_notify(
         self,
         *,
-        partner_ids=False,
-        parent_id=False,
-        model=False,
-        res_id=False,
-        author_id=None,
-        email_from=None,
         body="",
         subject=False,
+        author_id=None,
+        email_from=None,
+        model=False,
+        res_id=False,
+        subtype_xmlid=None,
+        subtype_id=False,
+        partner_ids=False,
+        attachments=None,
+        attachment_ids=None,
         **kwargs,
     ):
         if self and self.env.context.get("subscribe_notify") and partner_ids:
@@ -42,13 +45,16 @@ class MailThread(models.AbstractModel):
                 .ids
             )
         return super().message_notify(
-            partner_ids=partner_ids,
-            parent_id=parent_id,
-            model=model,
-            res_id=res_id,
-            author_id=author_id,
-            email_from=email_from,
             body=body,
             subject=subject,
+            author_id=author_id,
+            email_from=email_from,
+            model=model,
+            res_id=res_id,
+            subtype_xmlid=subtype_xmlid,
+            subtype_id=subtype_id,
+            partner_ids=partner_ids,
+            attachments=attachments,
+            attachment_ids=attachment_ids,
             **kwargs,
         )

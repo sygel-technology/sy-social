@@ -16,7 +16,7 @@
                 <field name="block_assigned_message" />
                 <field
                     name="block_assigned_message_model_ids"
-                    attrs="{'invisible': [('block_assigned_message', '=', False)]}"
+                    invisible="not block_assigned_message"
                     widget="many2many_tags"
                     options="{'no_create': True, 'no_edit': True, 'no_open': True}"
                 />
@@ -32,7 +32,7 @@
                 <field name="block_assigned_message" />
                 <field
                     name="block_assigned_message_model_ids"
-                    attrs="{'invisible': [('block_assigned_message', '=', False)]}"
+                    invisible="not block_assigned_message"
                     widget="many2many_tags"
                     options="{'no_create': True, 'no_edit': True, 'no_open': True}"
                 />

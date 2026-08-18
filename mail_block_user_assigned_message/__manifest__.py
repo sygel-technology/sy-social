@@ -4,7 +4,7 @@
 {
     "name": "Mail Block User Assigned Message",
     "summary": "Block assignation notifications depending on model",
-    "version": "16.0.1.0.0",
+    "version": "18.0.1.0.0",
     "category": "Project",
     "website": "https://github.com/sygel-technology/sy-social",
     "author": "Sygel",

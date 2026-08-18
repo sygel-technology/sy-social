@@ -1,0 +1,1 @@
+This module allows to select multiple models in each user so they don't receive a notification from the documents related to those models when the users are assigned to them. This module works for both Odoo and email notifications.
