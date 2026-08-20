@@ -1,7 +1,8 @@
 [project]
 name = "odoo-addons-sygel-technology-sy-social"
-version = "18.0.20260327.0"
+version = "18.0.20260820.0"
 dependencies = [
+    "odoo-addon-mail_block_user_assigned_message==18.0.*",
     "odoo-addon-mail_hide_header_portal_button==18.0.*",
     "odoo-addon-mail_show_follower_cc==18.0.*",
 ]
